@@ -53,6 +53,7 @@ public class ParticlesScene: SKScene {
     /// Stop animating the emitter node.
     func stopAnimating() {
         emitterNode.particleBirthRate = 0
+        emitterNode.removeAllActions()
     }
     
     /// Returns true if the animation is ongoing, otherwise false.
